@@ -1,10 +1,3 @@
----
-title: OutfitChanger
-sdk: gradio
-sdk_version: 4.12.0
-app_file: app.py
-license: mit
----
 # OutfitChanger: Dress in any outfit you want. 
 PS : It is not currently possible to wear both bottoms and tops at same time.
 ## For deploy the model on Google Colab : 
