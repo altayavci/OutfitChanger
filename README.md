@@ -1,12 +1,8 @@
 ---
 title: OutfitChanger
-emoji: 🏆
-colorFrom: purple
-colorTo: red
 sdk: gradio
 sdk_version: 4.12.0
 app_file: app.py
-pinned: false
 license: mit
 ---
 # OutfitChanger: Dress in any outfit you want.
