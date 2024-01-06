@@ -1,0 +1,13 @@
+git+https://github.com/tencent-ailab/IP-Adapter.git
+diffusers
+transformers
+accelerate
+scipy
+safetensors
+controlnet_aux
+pillow
+opencv-python
+python-dotenv
+
+
+
