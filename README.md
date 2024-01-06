@@ -1,7 +1,8 @@
 # OutfitChanger: Dress in any outfit you want. 
 PS : It is not currently possible to wear both bottoms and tops at same time.
 ## For deploy the model on Google Colab : 
-  - !git clone https://huggingface.co/spaces/altayavci/OutfitChanger/ PS: if you want clone the repo from Github please use <https://git-lfs.com>
+  - !git clone https://huggingface.co/spaces/altayavci/OutfitChanger/
+  (PS: if you want clone the repo from Github please use <https://git-lfs.com>)
   - cd /content/OutfitChanger
   - !pip install -q gradio
   - !pip install -r requirements.txt
