@@ -18,4 +18,4 @@ license: mit
 - If you have a high resolution outfit image, it is recommended to set OPENAI_CONSISTENCY_VAE = ENABLE in the .env file.
 - If you want to use SG161222/Realistic_Vision_V5.1_noVAE, it is recommended that you do not change the default vae.
 - It is not currently possible to wear both bottoms and tops.
-- Altay Avcı, <https://github.com/altayavci>
+  
