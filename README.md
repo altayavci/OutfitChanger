@@ -15,7 +15,10 @@ PS : It is not currently possible to wear both bottoms and tops at same time.
   - !python3 app.py
  
 ## CONFIGS:
+---
+ip adapter : https://github.com/tencent-ailab/IP-Adapter
 torch : 2.1.0+cu121
+numpy : 1.23.5
 diffusers: 0.25.0
 transformers: 4.35.2
 accelerate: 0.25.0
@@ -25,6 +28,7 @@ controlnet_aux: 0.0.7
 pillow: 9.4.0
 opencv-python: 4.8.0
 Gradio: 4.13.0
+---
 
 - MODELS: IP-Adapter, SDv.15: SG161222/Realistic_Vision_V4.0_noVAE, mattmdjaga/segformer_b2_clothes, lllyasviel/control_v11p_sd15_openpose
 - If you have a high resolution outfit image, it is recommended to set OPENAI_CONSISTENCY_VAE = ENABLE in the .env file.
