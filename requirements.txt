@@ -8,6 +8,7 @@ controlnet_aux
 pillow
 opencv-python
 python-dotenv
+gradio 
 
 
 

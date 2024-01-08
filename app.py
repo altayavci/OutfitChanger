@@ -54,20 +54,26 @@ with gr.Blocks(css=".output-image, .input-image, .image-preview {height: 400px !
         with gr.Row():
             top = gr.Image(sources='upload', type="filepath", label="TOP")
             example_top = gr.Examples(inputs=top,
-                                      examples_per_page=3,
-                                      examples=[os.path.join(os.path.dirname(__file__), "clothes/kıyafet.jpg"),
-                                                os.path.join(os.path.dirname(__file__), "clothes/kıyafet1.jpg"),
+                                      examples_per_page=9,
+                                      examples=[
+                                                os.path.join(os.path.dirname(__file__), "clothes/1716342819_6_1_1.jpg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/5854302802_6_1_1.jpg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/7712410833_2_6_8.jpg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/7713340833_2_6_8.jpg"),
                                                 os.path.join(os.path.dirname(__file__), "clothes/kıyafet3.jpeg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/WhatsApp Image 2024-01-08 at 12.17.17.jpeg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/kıyafet1.jpg"),
+                                                os.path.join(os.path.dirname(__file__), "clothes/WhatsApp Image 2024-01-08 at 12.25.43.jpeg"),
+                                                 os.path.join(os.path.dirname(__file__), "clothes/3992327611_6_1_1.jpg")
+
                                                             ])
                 
             with gr.Column():
                 down = gr.Image(sources='upload', type="filepath", label="DOWN")
                 example_down = gr.Examples(inputs=down,
-                                           examples_per_page=3,
+                                           examples_per_page=1,
                                            examples=[
-                                                os.path.join(os.path.dirname(__file__), "clothes/garments_bottom1.png"),
-                                                os.path.join(os.path.dirname(__file__), "clothes/indir (3).png"),
-                                                os.path.join(os.path.dirname(__file__), "clothes/WhatsApp Image 2024-01-02 at 01.24.44.jpeg")
+                                                os.path.join(os.path.dirname(__file__), "clothes/1538702400_6_1_1.jpg")
                                                             ])
                 
         with gr.Row():      
@@ -75,7 +81,7 @@ with gr.Blocks(css=".output-image, .input-image, .image-preview {height: 400px !
                 example_models = gr.Examples(inputs=init_image,
                                              examples_per_page=2,
                                              examples=[os.path.join(os.path.dirname(__file__), "humans/manken3.jpg"),
-                                                       os.path.join(os.path.dirname(__file__), "humans/manken2.jpg")
+                                                       os.path.join(os.path.dirname(__file__), "humans/4087211639_2_1_1.jpg")
                                                       ])
         with gr.Column():
             run_button = gr.Button(value="Run") 

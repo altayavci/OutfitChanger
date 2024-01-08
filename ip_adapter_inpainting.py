@@ -23,7 +23,8 @@ def generate(img_openpose_gen: Image, img_human: Image, img_clothes: Image, segm
                                 )
     composite = overlay_on_white_background(composite)
 
-    mask = get_blurred_mask(composite, segment_id)
+    #mask = get_blurred_mask(composite, segment_id)
+    mask = get_blurred_mask(img_human, segment_id)
     prompt = derive_caption(img_clothes)
 
     ip_gen = ip_model.model.generate(
@@ -35,9 +36,9 @@ def generate(img_openpose_gen: Image, img_human: Image, img_clothes: Image, segm
         seed=123,
         image=composite,
         mask_image=mask,
-        strength=0.75,
+        strength=0.8,
         guidance_scale=7,
-        scale=1.1
+        scale=0.8
         )[0]
 
     cropped_head = get_cropped_face(composite)

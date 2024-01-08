@@ -26,7 +26,7 @@ def generate(img_human: Image, img_clothes: Image):
         height=768,
         num_samples=1,
         num_inference_steps=30,
-        seed=123
+        seed=42
     )[0]
 
     torch.cuda.empty_cache()
